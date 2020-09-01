@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Traversal</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        body {
+            margin: 50px;
+            font-family: arial;
+            background-color: #666;
+        }
+        
+        .container {
+            width: 900px;
+            margin: auto;
+        }
+        
+        .card {
+            display: inline-block;
+            width: 220px;
+            padding: 0 80px;
+            height: 80px;
+            font-size: 16px;
+            line-height: 80px;
+            border-radius: 40px;
+            background-color: #f1f1f1;
+            margin: 20px;
+            position: relative;
+            text-align: center;
+        }
+        
+        .card img {
+            float: left;
+            margin: 0 10px 0 -80px;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        .card .nama,
+        .card .telp {
+            display: block;
+            line-height: 20px;
+            padding: 0 5px;
+        }
+        
+        .card .nama {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        
+        .card .telp {
+            margin-left: 20px;
+            margin-top: 5px;
+            font-size: 16px;
+            color: #aaa;
+        }
+        
+        .card .close {
+            font-size: 24px;
+            font-weight: bold;
+            color: #999;
+            position: absolute;
+            top: 0;
+            right: 30px;
+            cursor: pointer;
+        }
+        
+        .card .close:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="img/gmbr1.png" width="96" height="96">
+            <span class="nama">Koga_Yuika</span>
+            <span class="telp">12345678910</span>
+            <a href="" class="close">×</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="img/gmbr2.png" width="96" height="96">
+            <span class="nama">Fu_Hua</span>
+            <span class="telp">0987654321</span>
+            <a href="" class="close">×</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="img/gmbr3.png" width="96" height="96">
+            <span class="nama">Unknown</span>
+            <span class="telp">6758493021</span>
+            <a href="" class="close">×</a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="img/gmbr4.png" width="96" height="96">
+            <span class="nama">Sele</span>
+            <span class="telp">0982391010101</span>
+            <a href="" class="close">×</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
