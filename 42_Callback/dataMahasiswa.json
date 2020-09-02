@@ -1,0 +1,23 @@
+[
+    {
+        "nama"      : "Chino",
+        "nim"       : "010101010",
+        "email"     : "chino@gmail.com",
+        "jurusan"   : "TI",
+        "idDosen"   : 1
+    },
+    {
+        "nama"      : "Maya",
+        "nim"       : "1010101010",
+        "email"     : "maya@gmail.com",
+        "jurusan"   : "SI",
+        "idDosen"   : 2
+    },
+    {
+        "nama"      : "Megu",
+        "nim"       : "1100110011",
+        "email"     : "megu@gmail.com",
+        "jurusan"   : "IT",
+        "idDosen"   : 3
+    }
+]
