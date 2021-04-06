@@ -7,3 +7,9 @@ for (var i = 1; i <= 10; i++) {
         console.log(i + ' Sedang Tidak Beroprasi')
     }
 }
+
+// ternary oprator
+
+const isMember = false;
+const discount = isMember ? 0.1 : 0;
+console.log(`Anda mendapatkan diskon sebesar ${discount * 100}%`)

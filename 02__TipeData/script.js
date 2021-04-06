@@ -49,3 +49,15 @@ console.log(boolY + " tipeData = " + typeof(boolY));
 let someLaterData = null;  
 console.log(someLaterData + " tipeData = " + typeof(someLaterData));  
 // =================================================================
+
+
+// ==========================
+// bigInt
+// nilai angka yang sangat besar. ditandai dengan symbol n
+// ==========================
+const bigNumber = 1234567890123456789012345678901234567890n;
+const myInt = 1234567890123456789012345678901234567890;
+
+console.log(bigNumber);
+console.log(myInt);
+// =================================================================

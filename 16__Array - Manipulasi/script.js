@@ -34,7 +34,7 @@ console.log('Unshift: ' + arra2.join(' - '));
 arra2.shift();
 console.log('Shift: ' + arra2.join(' - '));
 
-//5. Splice Menyisipkan Sesuatu ditengah
+//5. Splice Menyisipkan Sesuatu ditengah / menghapus
 //splice(indexawal,maudihapusberapa,elementbaru1,2);
 var arra4 = ['Illiya', 'Von', 'Irisviel'];
 arra4.splice(2, 0, 'Hallo', ' chan');

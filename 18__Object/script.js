@@ -3,6 +3,7 @@ var Mahasiswa = {
     nama: "Latina",
     umur: 12,
     ips: [3.00, 2.00, 3.10],
+    "jurusan kuliah": "Informatika",
     alamat: {
         jalan: "jl.hahaha",
         kota: "Jakarta",
@@ -11,6 +12,10 @@ var Mahasiswa = {
 };
 
 console.log(Mahasiswa.alamat.jalan);
+console.log(Mahasiswa["jurusan kuliah"]);
+
+// hapus property object
+delete Mahasiswa.alamat
 
 
 console.log("===== Object =====");

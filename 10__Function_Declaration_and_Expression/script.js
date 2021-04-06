@@ -9,8 +9,8 @@ function volkub(a, b) {
 }
 alert(volkub(8, 10));
 
-//Fuction Expression
+//Fuction Expression / annonymouse function
 var pesan = function(nama) {
     alert('Hallo ' + nama);
 }
-pesan('kunyuk');
+pesan('sapi');
