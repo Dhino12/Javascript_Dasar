@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Local Storage yang serupa dengan session storage, namun
+        data yang disimpan tidak akan hilang bila browser atau tabs browser ditutup.
+        Kita bisa menghapus data pada local storage dengan method removeItem(). -->
+</head>
+
+<body>
+    <h4>Local Storage</h4>
+    <p>Anda Sudah Menekan Tombol Sebanyak <span id="count"></span> kali</p>
+    <button id="button">click disini</button>
+    <button id="clear">Hapus Storage</button>
+
+    <script>
+        const cacheKey = "NUMBER"
+        if (typeof (Storage) !== "undefined") {
+            // Browser Mendukung sessionStorage/LocalStorage
+            // Pengecekan apakah sessionStorage dengan key NUMBER tersedia atau belum
+            if(localStorage.getItem(cacheKey) === "undefined"){
+                // jika belum maka atur dengan nilai awal yakni 0
+                localStorage.setItem(cacheKey, 0);
+            }
+
+            const button = document.querySelector("#button");
+            const clearBtn = document.querySelector("#clear");
+            const count = document.querySelector("#count");
+            button.addEventListener("click",function(event){
+                let number = localStorage.getItem(cacheKey);
+                number++;
+                localStorage.setItem(cacheKey, number);
+                count.innerText = localStorage.getItem(cacheKey) 
+            })
+            clearBtn.addEventListener("click",function(event){
+                localStorage.removeItem(cacheKey);
+            })
+        } else {
+            // Browser Tidak Mendukung sessionStorage/LocalStorage
+            alert("Browser tidak mendukung web storage")
+        }
+    </script>
+</body>
+
+</html>

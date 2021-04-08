@@ -13,6 +13,8 @@ let number  = sum(20);
 
 console.log(total)
 
+// ===== output =====
+40
 ```
 
 > Perlu kita perhatikan, jika kita lupa menuliskan keyword let, const, atau var pada script ketika membuat sebuah variabel, maka variabel tersebut akan menjadi global.
