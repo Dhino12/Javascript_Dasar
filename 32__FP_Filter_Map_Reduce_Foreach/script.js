@@ -1,6 +1,15 @@
 // ! semua ini tidak bisa menggunakan operator break atau continue pada proses perulangan
 
 const angka = [-2, -4, -1, -5, 4, 0, 2, 1, 5, 3];
+const books = [
+  { title: 'The Da Vinci Code', author: 'Dan Brown', sales: 5094805 },
+  { title: 'The Ghost', author: 'Robert Harris', sales: 807311 },
+  { title: 'White Teeth', author: 'Zadie Smith', sales: 815586 },
+  { title: 'Fifty Shades of Grey', author: 'E. L. James', sales: 3758936 },
+  { title: 'Jamie\'s Italy', author: 'Jamie Oliver', sales: 906968 },
+  { title: 'I Can Make You Thin', author: 'Paul McKenna', sales: 905086 },
+  { title: 'Harry Potter and the Deathly Hallows', author: 'J.K Rowling', sales: 4475152 },
+];
 
 //Mencari angka >= 3;
 
@@ -48,6 +57,9 @@ const hasil = angka.filter(a => a > 5) // 8,9,9
 .map(a => a * 3) // 24, 27, 27
 .reduce((acc, curr) => acc + curr);
 console.log(hasil);
+
+let greatAuthor = books.filter(book => book.sales > 1000000)
+.map(writer => `${writer.author} adalah penulis buku ${writer.title} yang sangat hebat!`)
 
 // Foreach  ================================
 // fungsi ini tidak mengembalikan nilai apa pun.

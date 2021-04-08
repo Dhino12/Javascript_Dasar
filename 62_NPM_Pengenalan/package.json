@@ -1,0 +1,19 @@
+{
+  "name": "cofeemachine",
+  "version": "1.0.0",
+  "description": "learn_npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Javascript_Dasar"
+  },
+  "keywords": [
+    "learn_javascript"
+  ],
+  "author": "dhino_rahmad",
+  "license": "ISC"
+}
