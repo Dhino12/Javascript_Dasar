@@ -1,3 +1,5 @@
+// ! semua ini tidak bisa menggunakan operator break atau continue pada proses perulangan
+
 const angka = [-2, -4, -1, -5, 4, 0, 2, 1, 5, 3];
 
 //Mencari angka >= 3;
@@ -43,6 +45,15 @@ console.log("=== Chaining ===");
 // jumlahkan
 
 const hasil = angka.filter(a => a > 5) // 8,9,9
-    .map(a => a * 3) // 24, 27, 27
-    .reduce((acc, curr) => acc + curr);
+.map(a => a * 3) // 24, 27, 27
+.reduce((acc, curr) => acc + curr);
 console.log(hasil);
+
+// Foreach  ================================
+// fungsi ini tidak mengembalikan nilai apa pun.
+console.log("=== Foreach ===");
+const names = ['Joko', 'Eko', 'Riko', 'Yoko'];
+ 
+names.forEach((name) => {
+  console.log(`Hello, ${name}`);
+});

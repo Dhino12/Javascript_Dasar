@@ -1,0 +1,2 @@
+## Object Composition 
+Object composition adalah prinsip komposisi dari sebuah alur bisnis tanpa perlu melakukan pewarisan dari parent-nya. Prinsip ini didasarkan di mana kita telah mendefinisikan kumpulan-kumpulan perilaku (method/function) sehingga ketika kita ingin membuat alur bisnis lain dengan beberapa perilaku (method) yang sama, kita dapat menggunakan yang sudah ada tanpa melakukan inheritance/pewarisan.
