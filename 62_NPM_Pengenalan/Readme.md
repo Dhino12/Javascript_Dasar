@@ -3,6 +3,7 @@
 
 ## Linux
 > Linux Ubuntu <br>
+
 [Other Distro Linux](https://github.com/nodesource/distributions/blob/master/README.md) <br>
 ketikan perintah ini di terminal. <br>
 `curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -` 
