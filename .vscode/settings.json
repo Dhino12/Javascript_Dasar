@@ -1,5 +1,5 @@
 {
-    "editor.codeActionsOnSave": null,
+    "editor.codeActionsOnSave": true,
     "editor.fontFamily": "Consolas, monospace, 'Droid Sans Fallback'",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",

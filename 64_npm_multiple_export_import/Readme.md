@@ -15,13 +15,8 @@ jika sudah instal nodeJS <br>
 `sudo apt-get install -y nodejs`
 
 Lalu setelah selesai instal nodeJS, cek dengan perintah <br>
-```
-npm -v
-
-// atau dengan
-
-node -v
-```
+`npm -v` <br>
+`node -v`
 
 
 ## Windows
@@ -29,6 +24,3 @@ Download NodeJS pada official site nodeJS <br>
 [NodeJS](https://nodejs.org/en/) <br>
 jika sudah next trus sampai selesai, secara default nodeJS akan terinstal pada folder <br>
 `C\Program Files\nodejs\`
-
-## Run Javascript
-`node index.js`

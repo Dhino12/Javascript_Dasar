@@ -1,35 +1,3 @@
-// $.ajax({
-//     url:'http://www.omdbapi.com/?apikey=2d5c9328&s=naruto',
-//     success: movies => console.log(movies)
-// })
-
-// ======= Vanila JavaScript ======
-// const xhr = new XMLHttpRequest();
-// xhr.onreadystatechange = function(){
-//     if(xhr.status === 200){
-//         console.log("=========== Vanila Javascript ============")
-//         if(xhr.readyState === 4){
-//             console.log(JSON.parse(xhr.response));
-//         }
-//     }else{
-//         console.log(xhr.responseText);
-//     }
-// }
-
-// xhr.open('get','http://www.omdbapi.com/?apikey=2d5c9328&s=Is the Order a Rabbit?: Dear My Sister')
-// xhr.send();
-
-// --------- Simple --------------
-console.log("---------- Simple Promise ------------");
-// const movies = fetch('http://www.omdbapi.com/?apikey=2d5c9328&s=naruto')
-// .then(response => response.json())
-// .then(response => console.log(response))
-
-// console.log(movies);
-
-// const movies = fetch('http://www.omdbapi.com/?apikey=2d5c9328&s=naruto')
-// .then(response => response.json())
-// .then(response => console.log(response))
 
 // ========== Promise ===========
 // Object yang merepresentasikan keberhasilan / kegagalan sebuah
@@ -41,17 +9,17 @@ console.log("---------- Simple Promise ------------");
 
 // contoh 1
 let ditepati = true;
-// const janji1 = new Promise( (resolve, reject) => {
-//     if(ditepati){
-//         resolve('Janji Telah Ditepati') // ditangkap then
-//     }else{
-//         reject('Ingkar janji...') // ditangkap catch
-//     }
-// } )
+const janji1 = new Promise( (resolve, reject) => {
+    if(ditepati){
+        resolve('Janji Telah Ditepati') // ditangkap then
+    }else{
+        reject('Ingkar janji...') // ditangkap catch
+    }
+} )
 
-// janji1
-// .then(response => console.log('OK! : ' + response))
-// .catch(response => console.log('NOT OK! : ' + response))
+janji1
+.then(response => console.log('OK! : ' + response))
+.catch(response => console.log('NOT OK! : ' + response))
 
 // contoh 2
 const janji2 = new Promise((resolve, reject) => {
@@ -75,7 +43,7 @@ janji2
 
 console.log(" Selesai ");
 
-// ========== Menjalankan Banyak Promise sekaligus
+console.log("========== Menjalankan Banyak Promise sekaligus");
 // promise.all
 const film = new Promise((resolve) => {
     setTimeout(() => {
@@ -97,8 +65,8 @@ const cuaca = new Promise(resolve => {
     },500)
 });
 
-// film.then(response => console.log(response))
-// cuaca.then(response => console.log(cuaca))
+film.then(response => console.log(response))
+cuaca.then(response => console.log(cuaca))
 
 // Menjalankan 2 / lebih Promise sekaligus
 Promise.all([film,cuaca])
