@@ -16,5 +16,6 @@ Pastikan sudah berada di folder / direktori / package yang ingin ditest lalu jal
 
 **Laporan Test dengan HTML** <br>
 `npm run test -- --coverage` <br>
-[Code Report Jest](coverage/icov-report/index.html)
+berada di folder / directory <br>
+`coverage/icov-report/index.html`
 
