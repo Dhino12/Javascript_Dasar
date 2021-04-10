@@ -6,6 +6,7 @@ Java memiliki Maven dan Gradle, PHP memiliki Composer, dan Python memiliki pip, 
 
 [cara install NPM / NodeJS](https://github.com/Dhino12/Javascript_Dasar/tree/master/62_NPM_Pengenalan)
 
+## Command npm
 | Command                     | Description                 | Common Options                    |
 | --------------------------- | --------------------------- | --------------------------------- |
 | init                        | Membuat berkas package.json pada project | [--force|-f|--yes|-y|--scope] |
@@ -14,3 +15,5 @@ Java memiliki Maven dan Gradle, PHP memiliki Composer, dan Python memiliki pip, 
 | uninstall <package-name>    | Menghapus dan mengeluarkan package dari berkas package.json | [-S|--save|-D|--save-dev|-O|--save-optional|--no-save] |
 | version                     | Untuk melihat versi package yang tersedia secara global atau lokal | [<newversion> / major / minor / patch / premajor / preminor / prepatch / prerelease [--preid=<prerelease-id>] / from-git] |
 | node index.js               | untuk  menjalankan javascript | |
+| npm -h                      | melihat seluruh command npm | |
+
