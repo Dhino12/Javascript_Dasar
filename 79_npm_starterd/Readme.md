@@ -19,8 +19,8 @@ devDependencies digunakan untuk package yang berkaitan ketika proses pengembanga
 
 `npm uninstall <package-name>` <br><br>
 
-**devDependencies**
+**devDependencies** <br>
 `npm uninstall <package-name> --save-dev`<br><br>
 
-**help uninstall**
+**help uninstall** <br>
 `npm uninstall -h`<br><br>
