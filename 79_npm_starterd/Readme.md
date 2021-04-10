@@ -2,9 +2,9 @@
 **Local** <br>
 umumnya package akan diinstall pada direktori local / folder yang sama dengan project kita  <br>
 `npm install <package-name>` <br><br>
-atau 
+atau <br>
 `npm i <package-name>` <br><br>
-atau 
+atau <br>
 `npm add <package-name>` <br><br>
 
 **Global** <br>
