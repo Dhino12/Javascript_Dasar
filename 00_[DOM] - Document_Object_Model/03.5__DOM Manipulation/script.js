@@ -20,7 +20,7 @@
         //=====================================================
 
         //=====================================================
-        //node.insertBefore();          | Menyimpan element 
+        //node.insertBefore();          | Menyimpan element sebelum
         //=====================================================
         const liBaru = document.createElement('li');
         const textLiBaru = document.createTextNode('Item Baru');

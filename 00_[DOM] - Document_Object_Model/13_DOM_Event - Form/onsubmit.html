@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contents{
+            padding: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-width: 2px;
+            padding: 15px;
+        }
+
+        .form-element{
+            margin: 8px;
+            align-items: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <h2 align="center">isi data diri</h2>
+        <div class="formContent">
+            <form id="formDataDiri">
+                <div class="form-element">
+                    <label for="nama">Nama: </label>
+                    <input type="text" name="nama" id="nama" placeholder="Nama anda" required>
+                </div>
+                <div class="form-element">
+                    <label for="domisili">Domisili: </label>
+                    <input type="text" name="domisili" id="domisili" placeholder="Domisili anda" required>
+                </div>
+                <div class="form-element">
+                    <input type="submit" value="Submit Data">
+                </div>
+            </form>
+        </div>
+        <h3 id="messageAfterSubmit"></h3>
+    </div>
+</body>
+
+<script>
+    const submitAction = document.getElementById("formDataDiri");
+    submitAction.addEventListener("submit", function(){
+        const inputNama = document.getElementById("nama").value;
+        const inputDomisili = document.getElementById("domisili").value
+        const hiddenMessage = "Hallo " + inputNama + " Bagaimana cuaca di " + inputDomisili + " ?"
+
+        document.getElementById("messageAfterSubmit").innerText = hiddenMessage;
+
+        event.preventDefault(); // akan memecah proses refresh  
+    })
+</script>
+</html>

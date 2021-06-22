@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body * {
+            margin: 8px;
+            padding: 5px;
+            border: 1px solid black;
+            border-width: 2px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Kebalikan dari bubbling -->
+    <div align = "center">Langit
+        <div align = "center">Luar
+            <div align = "center">Tengah
+                <div align = "center">Dalam
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const divs =  document.getElementsByTagName("div")
+
+        for(let el of divs){
+            el.addEventListener('click', function(){
+                alert("Element" + el.getAttribute('id').toUpperCase())
+            }, true)
+        }
+    </script>
+</body>
+</html>
