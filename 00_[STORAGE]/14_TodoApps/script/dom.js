@@ -10,19 +10,19 @@ function addToDo(){
     console.log("todo " + textTodo);
     console.log("timestamp " + timestamp);
 
-    const todo = makeTodo(textTodo, timestamp);
+    const todo = makeTodo(textTodo, timestamp, false);
     uncompletedTODOList.append(todo);
 
     const todoObject = composeTodoObject(textTodo, timestamp, false);
 
-    todo[TODO_ITEMID] = todoObject.id;
+    // todo[TODO_ITEMID] = todoObject.id;
     todos.push(todoObject)
 
     uncompletedTODOList.append(todo);
     updateDataToStorage();
 }
 
-function makeTodo(data,timestamp, isCompleted){
+function makeTodo(data, timestamp, isCompleted){
     const textTitle = document.createElement("h2");
     textTitle.innerText = data;
 
@@ -62,6 +62,7 @@ function addTaskToCompleted(taskElement){
     const newTodo = makeTodo(taskTitle, taskTimestamp, true);
     const listCompleted = document.getElementById(COMPLETED_LIST_TODO_ID);
     const todo = findTodo(taskElement[TODO_ITEMID]);
+
     todo.isCompleted = true;
     newTodo[TODO_ITEMID] = todo.id;
 

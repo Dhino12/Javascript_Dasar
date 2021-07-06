@@ -18,11 +18,12 @@ function saveData(){
 
 function loadDataFromStorage(){
     const serializedData = localStorage.getItem(STORAGE_KEY);
-
+    
     let data = JSON.parse(serializedData);
-
+    
     if(data !== null){
         todos = data
+        console.log(todos);
     }
 
     document.dispatchEvent(new Event("ondataloaded"));
@@ -66,7 +67,7 @@ function findTodoIndex(todoId){
 // memuat data saat startup / refresh
 
 function refreshDataFromTodos(){
-    const listUncompleted = document.getElementById(UNCOMPLETED_LIST_TODO_ID);
+    const listUncompleted = document.getElementById(UNCOMPLETE_LIST_TODO_ID);
     let listCompleted = document.getElementById(COMPLETED_LIST_TODO_ID);
 
     for(todo of todos){
